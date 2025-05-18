@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nice-select.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="panel">
+            <div class="thumbnail_area flex_center">
+                <div class="thumbnail" style="background-image: url(./image/strawberry.webp);"></div>
+            </div>
+            <div class="selection">
+                <span class="name font_large">いちご</span><br>
+                <span class="font_x_large">¥<span class="value_of_item">500</span></span><br>
+                <div class="space"></div>
+                <label>▶︎個数</label>
+                <div class="counter">
+                    <button class="quantity_button minus flex_center">-</button>
+                    <div class="indicator flex_center">0</div>
+                    <button class="quantity_button plus flex_center">+</button>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="panel">
+            <div class="thumbnail_area flex_center">
+                <div class="thumbnail" style="background-image: url(./image/blue.webp);"></div>
+            </div>
+            <div class="selection">
+                <span class="name font_large">ブルーハワイ</span><br>
+                <span class="font_x_large">¥<span class="value_of_item">400</span></span><br>
+                <label>▶︎個数</label>
+                <div class="counter">
+                    <button class="quantity_button minus flex_center">-</button>
+                    <div class="indicator flex_center">0</div>
+                    <button class="quantity_button plus flex_center">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="thumbnail_area flex_center">
+                <div class="thumbnail" style="background-image: url(./image/CALPIS.jpg);"></div>
+            </div>
+            <div class="selection">
+                <span class="name font_large">カルピス</span><br>
+                <span class="font_x_large">¥<span class="value_of_item">300</span></span><br>
+                <div class="space"></div>
+                <label>▶︎個数</label>
+                <div class="counter">
+                    <button class="quantity_button minus flex_center">-</button>
+                    <div class="indicator flex_center">0</div>
+                    <button class="quantity_button plus flex_center">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="thumbnail_area flex_center">
+                <div class="thumbnail" style="background-image: url(./image/matcha.webp);"></div>
+            </div>
+            <div class="selection">
+                <span class="name font_large">抹茶</span><br>
+                <span class="font_x_large">¥<span class="value_of_item">200</span></span><br>
+                <div class="space"></div>
+                <label>▶︎個数</label>
+                <div class="counter">
+                    <button class="quantity_button minus flex_center">-</button>
+                    <div class="indicator flex_center">0</div>
+                    <button class="quantity_button plus flex_center">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="thumbnail_area flex_center">
+                <div class="thumbnail" style="background-image: url(./image/black.jpg);"></div>
+            </div>
+            <div class="selection">
+                <span class="name font_large">黒蜜</span><br>
+                <span class="font_x_large">¥<span class="value_of_item">100</span></span><br>
+                <div class="space"></div>
+                <label>▶︎個数</label>
+                <div class="space"></div>
+                <div class="counter">
+                    <button class="quantity_button minus flex_center">-</button>
+                    <div class="indicator flex_center">0</div>
+                    <button class="quantity_button plus flex_center">+</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex_center flex_column">
+            <span>現在の金額:</span>
+            <div class="value_box font_xx_large">
+                <span>¥</span>
+                <span id="total_value">0</span>
+            </div>
+        <button class="normal_button button_to_show_qr" style="left: -1rem;">
+            <span class="material-symbols-outlined">qr_code_2</span>QRコード提示
+        </button>
+        <span style="font-size: small;">店員がqrコードをスキャンするまで注文は確定されません。</span>
+    </footer>
+    <div class="mordal_box">
+        <div id="qrcode"></div>
+    </div>
+
+    <script src="./js/qrcode.min.js"></script>
+    <script src="./js/jsframe.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
